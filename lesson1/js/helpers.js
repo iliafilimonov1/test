@@ -2,5 +2,9 @@
  * @param {string} text
  */
 export function getDescription(text) {
-    return text.length <= 10
+    if (text.length <= 10) {
+        return "You cannot autorized"
+    } else {
+        return "You autorized"
+    }
 }
